@@ -78,11 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           children: [
-            Row(),
-            Row(children: [Expanded(child: Column())],),
-            Row(children: [Expanded(child: ElevatedButton(onPressed: (){}, child: Text('Boutton du bas')))])
+            Expanded(child: Row(children: [Text('YO'),Expanded(child: Column())],)),
+            Expanded(child: Row(children: [Expanded(child: Column()),Expanded(child: Container(color: Colors.black,))],))
           ],
-        ),
+        )
       ),
     );
   }
